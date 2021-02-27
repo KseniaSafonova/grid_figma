@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <title>Document</title>
     <style>
             body {
                 background: url("picture.png");
-                background-size: cover;
+                background-size:cover;
+                height: 800px;
                 color: white;
             }
 
@@ -22,7 +24,7 @@
                 display: grid;
                 width: 100%;
                 height: 100vh;
-                grid-template-rows: 20% 30% 25% 20%;
+                grid-template-rows: 20% 40% 10% 20% 20% 1fr;
                 grid-template-columns: 10% 20% repeat(5, 1fr)  20% 10%;              
             }
             
@@ -30,13 +32,13 @@
                 grid-row: 1/2;
                 grid-column: 3/8;
                 text-align: center;
-                padding-top: 40px;
+                padding-top: 47px;
             }
 
             .img {
                 grid-row: 1/2;
                 grid-column: 2/3;
-                padding-top: 15%;
+                padding-top: 42px;
             }
 
             .rightblock {
@@ -49,8 +51,8 @@
                 box-sizing: border-box;
                 padding: 5%;
                 text-align: center;
-                margin-top: 10%;
-                
+                margin-top: 35px;
+                margin-left: 50px;
             }
 
             .text-1 {
@@ -60,7 +62,7 @@
                 font-size: 65px;
                 font-style: normal;
                 font-weight: 700;
-                padding-top: 10%;
+                padding-top:12%;
             }
 
             .text-2 {
@@ -70,7 +72,7 @@
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
-                padding-top: 15%;
+                padding-top: 4%;
             }
 
             .text-3 {
@@ -83,6 +85,59 @@
                 box-sizing: border-box;
                 padding: 5%;
                 text-align: center;
+                margin-top: 10%; 
+            }
+
+            .container_pl {
+                grid-column: 1/10;
+                grid-row: 6/7;
+                display: grid;
+                grid-template-columns: 15% 1fr 1fr 1fr 15%;
+                grid-template-rows: 10% 10% 35% 1fr; 
+                background-color: #fff;
+                color: black;
+                margin-top: 8%;
+                padding-top: 100px;
+                text-align: center;
+                height: 800px;
+                font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;;
+            }
+
+            .p_locations {
+                grid-column: 1/6;
+                grid-row: 1/2;
+                font-size: 43px;
+                font-style:normal;
+                font-weight: 600;
+            }
+
+            .description {
+                grid-column: 1/6;
+                grid-row: 2/3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .img_locations {
+            grid-column: 1/6;
+            grid-row: 3/4;
+            padding: 10px; 
+            }
+
+            .istanbul {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            }
+
+            .kuala {
+            grid-column: 3/4;
+            grid-row: 4/5;
+            }
+
+            .seoul {
+            grid-column: 4/5;
+            grid-row: 4/5;
             }
     </style>
 </head>
@@ -100,6 +155,21 @@
         <div class="text-1">Railtrips To Here, <br> There And Everywhere!</div>
         <div class="text-2">We all wish to start our year the best way possible and also according to a common belief if you have a great start to your.</div>
         <div class="text-3"><a href="">Explore more</a></div>
+    <div class="container_pl">
+        <div class="p_locations">Popular Locations</div>
+        <div class="description">For every one of us, travel came first. We’ve spent years living as nomads, pioneers,  and <br>voyagers— from island hopping in the</div>
+        <div class="img_locations">
+            <a href="@"><img src="istanbul.png" alt="Istanbul" width="20%"></a>
+            <a href="@"><img src="kuala.png" alt="Kuala Lumpur" width="20%"></a>
+            <a href="@"><img src="seoul.png" alt="Seoul" width="20%"></a><br>
+        </div>
+        <div class="istanbul" style="font-size: 15px;"> <strong>Istanbul, Turkey </strong><br>
+            Istanbul is a major city in Turkey that <br> straddles Europe. </div>
+        <div class="kuala" style="font-size: 15px;"> <strong>Kuala Lumpur, malaysia</strong> <br>
+            A 272-step long trek leads you to <br> this century.</div>
+        <div class="seoul" style="font-size: 15px;"> <strong>Seoul, South Korea</strong> <br>
+            South Korea officially the Republic of <br> Korea is a country in East Asia.</div> 
+    </div>
     </div>
 </body>
 </html>
